@@ -1,20 +1,32 @@
 /* -------common css START--------- */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     display: inline-block;
 }
-ul,ol{
+
+ul,
+ol {
     list-style: none;
+    padding: 0;
 }
-h1,h2,h3,h4,h5,h6,p{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     line-height: 0.8;
 }
-.container{
+
+.container {
     width: 1320px;
     margin: 0 auto;
 }
@@ -24,12 +36,13 @@ h1,h2,h3,h4,h5,h6,p{
 
 
 /* ---------NAVBAR CSS START------------ */
-.navbar{
+.navbar {
     background: rgba(22, 12, 109, 0.5);
     position: absolute;
     z-index: 10;
     width: 100%;
 }
+
 .navbar-expand .navbar-nav .nav-link {
     padding-right: 35px;
     padding-left: 35px;
@@ -38,12 +51,13 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: 600;
     color: #ffff;
 }
-.navbar-expand .navbar-nav .nav-link:hover{
+
+.navbar-expand .navbar-nav .nav-link:hover {
     color: #FF7628;
     transition: all linear 0.5s;
 }
 
-.navbtn button{
+.navbtn button {
     padding: 14px 28px;
     background: #1BBf00;
     color: white;
@@ -60,7 +74,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* ---------BANNER CSS START------------ */
 
-#banner{
+#banner {
     background: url(../images/banner.jpg);
     padding-top: 245px;
     padding-bottom: 255px;
@@ -70,7 +84,8 @@ h1,h2,h3,h4,h5,h6,p{
     position: relative;
     z-index: 1;
 }
-#banner::after{
+
+#banner::after {
     content: '';
     position: absolute;
     top: 0;
@@ -80,24 +95,27 @@ h1,h2,h3,h4,h5,h6,p{
     background: rgba(106, 98, 197, 0.834);
     z-index: -1;
 }
-.bbg{
+
+.bbg {
     margin-top: 80px;
     margin-left: 31px;
     position: absolute;
     z-index: 3;
 }
-.bbgo{
+
+.bbgo {
     margin-top: 550px;
     margin-left: 1480px;
     margin-right: 200px;
     position: absolute;
     z-index: 3;
 }
-.banner-details{
+
+.banner-details {
     z-index: 3;
 }
 
-.banner-details h1{
+.banner-details h1 {
     color: #FAFAFE;
     font-size: 84px;
     font-family: 'Open Sans', sans-serif;
@@ -107,7 +125,8 @@ h1,h2,h3,h4,h5,h6,p{
     padding-bottom: 20px;
     margin: 0 auto;
 }
-.banner-details p{
+
+.banner-details p {
     color: #E6E5F3;
     font-size: 24px;
     font-family: 'Paprika', cursive;
@@ -118,16 +137,17 @@ h1,h2,h3,h4,h5,h6,p{
     padding-bottom: 16px;
 }
 
-.banner-btn .bbtnone:hover{
-    background: #1BBf00;
-    transition: all linear 0.5s;
-}
-.banner-btn .bbtntwo:hover{
+.banner-btn .bbtnone:hover {
     background: #1BBf00;
     transition: all linear 0.5s;
 }
 
-.bbtnone{
+.banner-btn .bbtntwo:hover {
+    background: #1BBf00;
+    transition: all linear 0.5s;
+}
+
+.bbtnone {
     border-radius: 50px;
     border: none;
     color: white;
@@ -141,7 +161,8 @@ h1,h2,h3,h4,h5,h6,p{
     box-sizing: border-box;
     border: #1BBf00 2px solid;
 }
-.bbtntwo{
+
+.bbtntwo {
     color: white;
     border-radius: 50px;
     border: none;
@@ -165,15 +186,17 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* ---------STATUS CSS START------------ */
 
-#status{
+#status {
     padding: 280px 0;
     text-align: center;
     position: relative;
 }
-.status-details{
+
+.status-details {
     border-right: solid 2px rgba(79, 88, 95, 0.233);
 }
-.status-detailsd h3{
+
+.status-detailsd h3 {
     color: #1BBF00;
     font-size: 64px;
     font-family: 'Open Sans', sans-serif;
@@ -181,7 +204,8 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 68px;
     word-wrap: break-word;
 }
-.status-details h3{
+
+.status-details h3 {
     color: #1BBF00;
     font-size: 64px;
     font-family: 'Open Sans', sans-serif;
@@ -189,17 +213,8 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 68px;
     word-wrap: break-word;
 }
-.status-details p{
-    color: #141135;
-    font-size: 36px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    text-transform: capitalize;
-    line-height: 40px;
-    word-wrap: break-word;
-    padding-top: 24px;
-}
-.status-detailsd p{
+
+.status-details p {
     color: #141135;
     font-size: 36px;
     font-family: 'Open Sans', sans-serif;
@@ -210,7 +225,18 @@ h1,h2,h3,h4,h5,h6,p{
     padding-top: 24px;
 }
 
-.statusbg img{
+.status-detailsd p {
+    color: #141135;
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 40px;
+    word-wrap: break-word;
+    padding-top: 24px;
+}
+
+.statusbg img {
     position: absolute;
     top: 0;
     right: 0;
@@ -229,21 +255,22 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* --------CHOOSEN CSS START------------ */
 
-#choosen{
+#choosen {
     padding: 100px 0;
     background: #FDFDFD;
     position: relative;
 }
 
-.choose-circle{
+.choose-circle {
     width: 25px;
     height: 25px;
     background: #1BBF00;
     border-radius: 50%;
     position: relative;
-    
+
 }
-.choose-circle::after{
+
+.choose-circle::after {
     content: '';
     position: absolute;
     top: 0;
@@ -252,21 +279,24 @@ h1,h2,h3,h4,h5,h6,p{
     height: 25px;
     background: #CBC8F0;
     border-radius: 50%;
-    
+
 }
-.choose-point{
+
+.choose-point {
     display: flex;
     margin-bottom: 30px;
     padding: 0 146px 0 28px;
     border-radius: 12px;
 }
-.choose-point:hover{
+
+.choose-point:hover {
     padding: 42px 146px 42px 28px;
     color: #FFFFFF;
     box-shadow: 10px 30px 60px rgba(162, 169, 192, 0.15);
     transition: all linear 0.3s;
 }
-.choose-point p{
+
+.choose-point p {
     color: #726E9E;
     width: 319px;
     font-size: 18px;
@@ -275,7 +305,8 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 30px;
     margin-left: 37px;
 }
-.choose-point p2{
+
+.choose-point p2 {
     color: #726E9E;
     width: 404px;
     font-size: 18px;
@@ -285,7 +316,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin-left: 37px;
 }
 
-.choose-point p3{
+.choose-point p3 {
     color: #726E9E;
     width: 366px;
     font-size: 18px;
@@ -295,7 +326,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin-left: 37px;
 }
 
-.choose-point p4{
+.choose-point p4 {
     color: #726E9E;
     width: 331px;
     font-size: 18px;
@@ -304,17 +335,20 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 30px;
     margin-left: 37px;
 }
-.choose-right{
+
+.choose-right {
     margin-left: 186px;
 }
-.choose-right h3{
+
+.choose-right h3 {
     color: #141135;
     font-size: 48px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     word-wrap: break-word;
 }
-.choose-right p{
+
+.choose-right p {
     color: #726E9E;
     font-size: 18px;
     font-family: 'Paprika', cursive;
@@ -325,7 +359,8 @@ h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 40px;
     width: 393px;
 }
-.choose-right a{
+
+.choose-right a {
     color: #F9F9F9;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
@@ -338,12 +373,14 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 20px 40px;
     border-radius: 100px;
 }
-.choosenbg{
+
+.choosenbg {
     position: absolute;
     top: 0;
     left: 0;
 
 }
+
 /* --------CHOOSEN CSS END------------ */
 
 
@@ -352,19 +389,20 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* --------DO-CARD CSS START------------ */
 
-#docart{
+#docart {
     padding: 100px 0;
     background: #F6F5FF;
 }
 
-.do-title h3{
+.do-title h3 {
     color: #141135;
     font-size: 48px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     word-wrap: break-word;
 }
-.do-title p{
+
+.do-title p {
     color: #6C7D93;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
@@ -376,7 +414,8 @@ h1,h2,h3,h4,h5,h6,p{
     margin-top: 20px;
     margin-bottom: 56px;
 }
-.do-title a{
+
+.do-title a {
     color: #F9F9F9;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
@@ -389,21 +428,29 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 20px 40px;
     border-radius: 100px;
 }
+
 /* ------one-------- */
 
-.doone{
+.doone {
     height: 400px;
     background: white;
-    box-shadow: 0px 30px 60px rgba(161.86, 168.94, 192.31, 0.10);
+    box-shadow: 0px 30px 60px rgba(161, 86, 168, 94, 192, 31, 0.10);
     border-radius: 20px;
     padding-top: 48px;
     position: relative;
 }
-.doone:hover{
+
+.doone:hover {
     background: #6B62C5;
+    transition: all linear 0.5s;
 }
 
-.doone h3{
+.doone:hover h3 {
+    color: white;
+    transition: all linear 0.5s;
+}
+
+.doone h3 {
     color: #141135;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -414,11 +461,13 @@ h1,h2,h3,h4,h5,h6,p{
     padding-top: 32px;
     margin-bottom: 16px;
 }
-.doone:hover h3{
+
+.doone:hover p {
     color: white;
+    transition: all linear 0.5s;
 }
 
-.doone p{
+.doone p {
     color: #726E9E;
     font-size: 18px;
     font-family: 'Paprika', cursive;
@@ -429,11 +478,13 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0 auto;
     height: 120px;
 }
-.doone:hover p{
+
+.doone:hover .btndesign a {
     color: white;
+    transition: all linear 0.5s;
 }
 
-.doone .btndesign a{
+.btndesign a {
     color: #141135;
     font-size: 18px;
     font-family: 'Open Sans', sans-serif;
@@ -441,15 +492,20 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 24px;
     word-wrap: break-word;
 }
-.doone .btndesign:hover a{
-    color: white ;
-}
-.btndesign{
+
+.btndesign {
     margin-top: 20px;
     position: relative;
 }
 
-.design{
+.doone:hover .design {
+    border-radius: 30px;
+    width: 120px;
+    background: #FFFFFF;
+    transition: all linear 0.5s;
+}
+
+.design {
     width: 27px;
     height: 40px;
     border-radius: 0 100px 100px 0;
@@ -459,22 +515,16 @@ h1,h2,h3,h4,h5,h6,p{
     top: -10px;
     right: 150px;
 }
-.design:hover{
-    border-radius: 30px;
-    width: 120px;
-    background: #FFFFFF;
-    transition: all linear 0.5s;
-}
 
 
 
 /* --------CREATE CSS START-------------- */
-#create{
+#create {
     padding: 100px 0;
     position: relative;
 }
 
-.header h3{
+.header h3 {
     color: #141135;
     font-size: 48px;
     font-family: 'Open Sans', sans-serif;
@@ -482,7 +532,8 @@ h1,h2,h3,h4,h5,h6,p{
     word-wrap: break-word;
     margin-bottom: 25px;
 }
-.header p{
+
+.header p {
     color: #726E9E;
     font-size: 18px;
     font-family: 'Paprika', cursive;
@@ -492,14 +543,17 @@ h1,h2,h3,h4,h5,h6,p{
     width: 558px;
     margin: 0 auto;
 }
-.ccone{
+
+.ccone {
     display: flex;
 }
-.cctwo{
+
+.cctwo {
     display: flex;
     margin-top: 40px;
 }
-.ccleft h3{
+
+.ccleft h3 {
     color: #141135;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -509,7 +563,8 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing: 0.50px;
     word-wrap: break-word;
 }
-.ccleft p{
+
+.ccleft p {
     color: #726E9E;
     font-size: 18px;
     font-family: 'Paprika', cursive;
@@ -517,19 +572,21 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 30px;
     word-wrap: break-word;
     width: 343px;
-    
+
 }
 
-.cbg{
+.cbg {
     position: absolute;
     bottom: 0;
     right: 0;
 
 }
-.createtext1{
+
+.createtext1 {
     margin-left: 40px;
 }
-.createtext2{
+
+.createtext2 {
     margin-left: 35px;
 }
 
@@ -543,11 +600,12 @@ h1,h2,h3,h4,h5,h6,p{
 
 
 /* --------PLAN CSS START------------ */
-#plan{
+#plan {
     background: #F9F9FB;
     padding: 100px 0;
 }
-.planheader h3{
+
+.planheader h3 {
     color: #141135;
     font-size: 48px;
     font-family: 'Open Sans', sans-serif;
@@ -555,10 +613,12 @@ h1,h2,h3,h4,h5,h6,p{
     word-wrap: break-word;
     text-align: center;
 }
-.plancriteria{
+
+.plancriteria {
     margin-top: 65px;
 }
-.basic{
+
+.basic {
     background: white;
     box-shadow: 0px 30px 60px rgba(162, 169, 192, 0.15);
     border-radius: 20px;
@@ -566,7 +626,7 @@ h1,h2,h3,h4,h5,h6,p{
     text-align: center;
 }
 
-.basic:hover{
+.basic:hover {
     background: #6001D3;
     box-shadow: 0px 30px 60px #6001D3;
     border-radius: 20px;
@@ -575,7 +635,7 @@ h1,h2,h3,h4,h5,h6,p{
     transition: all linear 0.5s;
 }
 
-.basic h4{
+.basic h4 {
     color: #141135;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -585,7 +645,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 25px;
 }
 
-.basic:hover h4{
+.basic:hover h4 {
     color: #FAFAFE;
     font-size: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -595,7 +655,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 25px;
 }
 
-.basic .dollar{
+.basic .dollar {
     color: #1BBF00;
     font-size: 24px;
     font-family: 'Quicksand', sans-serif;
@@ -607,7 +667,8 @@ h1,h2,h3,h4,h5,h6,p{
     top: 0;
     left: 150px;
 }
-.basic .price{
+
+.basic .price {
     color: #1BBF00;
     font-size: 48px;
     font-family: 'Nunito', sans-serif;
@@ -617,7 +678,8 @@ h1,h2,h3,h4,h5,h6,p{
     position: relative;
     margin-top: 20px;
 }
-.basic .basiccontent{
+
+.basic .basiccontent {
     color: #726E9E;
     font-size: 18px;
     font-family: 'Paprika', cursive;
@@ -628,7 +690,7 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0 auto;
 }
 
-.basic:hover .basiccontent{
+.basic:hover .basiccontent {
     color: #E6E5F3;
     font-size: 18px;
     font-family: 'Paprika', cursive;
@@ -637,7 +699,7 @@ h1,h2,h3,h4,h5,h6,p{
     word-wrap: break-word;
     width: 252px;
     margin: 0 auto;
-    
+
 }
 
 /* --------PLAN CSS END-------------- */
@@ -645,31 +707,33 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* --------PEOPLE CSS START-------------- */
 
-#people{
+#people {
     padding: 100px 0;
     background: #F8F8FF;
     position: relative;
 }
-#people h3{
+
+#people h3 {
     margin-bottom: 180px;
     text-align: center;
     color: #141135;
     font-size: 48px;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     word-wrap: break-word;
 }
 
-.peopledetails{
+.peopledetails {
     background: white;
     box-shadow: -15px 30px 50px rgba(171, 175, 199, 0.30);
     border-radius: 20px;
     padding: 120px 0 60px 0;
 }
-.peopledetails p{
+
+.peopledetails p {
     color: #726E9E;
     font-size: 24px;
-    font-family: Paprika;
+    font-family: 'Paprika', cursive;
     font-weight: 400;
     line-height: 40px;
     word-wrap: break-word;
@@ -678,37 +742,50 @@ h1,h2,h3,h4,h5,h6,p{
     text-align: center;
 }
 
-.peopleinfo{
+
+.peopleinfo {
     text-align: center;
 }
 
-.peopleinfo h4{
+.peopleinfo h4 {
     color: #221A2C;
     font-size: 25px;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     line-height: 40px;
     word-wrap: break-word;
-    /* padding-left: 150px;
-    padding-right: 180px; */
-
     padding-top: 50px;
     margin-bottom: 5px;
 }
-.peopleinfo h6{
+
+.peopleinfo h6 {
     color: #726E9E;
     font-size: 16px;
-    font-family: Paprika;
+    font-family: 'Paprika', cursive;
     font-weight: 400;
     line-height: 25px;
     word-wrap: break-word;
-
+    
 }
-.peopleimg{
+.icon {
+    color: #FF7628;
+    text-align: center;
+    margin-top: -50px;
+    margin-left: 30px;
+}
+
+.peopleimg {
     position: absolute;
     top: 200px;
-    left: 50%;
-    transform: translate(-50%);
+    left: 35%;
+    transform: translate(50%);
+    height: 250px;
+    width: 250px;
+    text-align: center;
+}
+.peopleimg img{
+    height: 250px;
+    width: 250px;
 }
 
 
@@ -722,16 +799,178 @@ h1,h2,h3,h4,h5,h6,p{
 #blog {
     padding: 100px 0;
     background: #F8F8FF;
+    position: relative;
 }
 
-#blog h3{
+.blogcontent {
+    margin-top: 65px;
+}
+
+#blog h3 {
     color: #030314;
     font-size: 50px;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     line-height: 65px;
     word-wrap: break-word;
 }
 
+.blogimage {
+    background: #C4C4C4;
+    width: 380px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.blogitems {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.blogdetails {
+    width: 550px;
+    margin-left: 100px;
+}
+
+.blogdetails h4 {
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -1.5px;
+    line-height: 55px;
+    font-size: 30px;
+    margin-top: 16px;
+
+}
+
+.blogcontextdetails ul {
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+}
+
+.blogcontextdetails ul li {
+    color: #726E9E;
+    line-height: 25px;
+    font-weight: medium;
+}
+
+.blogcontextdetails ul li:hover {
+    color: #1BBF00;
+    line-height: 22px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    cursor: pointer;
+    transition: all linear 0.5s;
+}
+
+.blogdetails .btndesign a {
+    color: #141135;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.blogdetails .btndesign {
+    margin-top: 20px;
+
+    cursor: pointer;
+}
+
+.designtwo {
+    width: 27px;
+    height: 40px;
+    border-radius: 0 100px 100px 0;
+    opacity: 0.30;
+    background: #1BBF00;
+    position: absolute;
+    top: -10px;
+    right: 445px;
+}
+
+.designtwo:hover {
+    border-radius: 30px;
+    width: 120px;
+    transition: all linear 0.5s;
+}
+
+.vectorpng img {
+    position: absolute;
+    top: 830px;
+    left: -130px;
+}
 
 /* --------BLOG CSS END-------------- */
+
+
+
+/* --------FOOTER CSS START-------------- */
+#contact {
+    background: #48409C;
+    padding: 140px 0 60px 0;
+}
+
+.footer_text p {
+    color: #FEFEFE;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 180%;
+    word-wrap: break-word;
+    margin-top: 30px;
+}
+
+.about {
+    margin-left: 76px;
+
+}
+
+.about p {
+    color: #FEFEFE;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+    line-height: 140%;
+}
+
+.aboutlist {
+    margin-top: 40px;
+}
+
+.aboutlist li {
+    margin-bottom: 20px;
+    color: #FEFEFE;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    line-height: 120%;
+    word-wrap: break-word;
+}
+
+.copyrighttext {
+    text-align: center;
+}
+
+.copyrighttext {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.copyrighttext a {
+    color: #FEFEFE;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: 180%;
+    word-wrap: break-word;
+}
+
+
+
+
+
+/* --------Footer CSS END------------ */
